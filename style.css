@@ -1,0 +1,64 @@
+html,
+body {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  width: 360px;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  margin: 1.7rem;
+  box-sizing: border-box;
+}
+
+.header,
+p {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+}
+
+.prize {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Fraunces", serif;
+  color: #3c8067;
+}
+
+span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #6c7289;
+  text-decoration: line-through;
+  vertical-align: middle;
+  padding-bottom: 0.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  background-color: #3c8067;
+  color: #fff;
+  border-radius: 5px;
+}
