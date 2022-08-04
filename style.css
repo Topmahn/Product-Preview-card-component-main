@@ -1,64 +1,114 @@
-html,
-body {
+html {
   font-size: 14px;
-  background-color: hsl(30, 38%, 92%);
-}
-.container {
-  width: 360px;
-  background-color: #fff;
-  border-radius: 1rem;
-  padding-bottom: 1rem;
-  overflow: hidden;
-}
-img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
-.content {
-  margin: 1.7rem;
-  box-sizing: border-box;
-}
-
-.header,
-p {
-  color: #6c7289;
+body {
+  background-color: #f2ebe3;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.header p{
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center center;
+}
+
+.item-box{
+  min-width: 375px;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 0.8fr 1fr;
+  background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.item-img-box {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.item-content {
+  padding: 1rem;
+}
+
+h2 {
   font-weight: 100;
+  font-size:  1rem;
+  letter-spacing: 5px;
+  color: #6c7289;
 }
 
 h1 {
   text-transform: capitalize;
   font-family: "Fraunces", serif;
+  font-size: 2.5rem;
 }
 
-.prize {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.discription {
+  color: #6c7289;
+  
+  word-spacing: 5px;
+}
+
+.item-price {
+  display: flex;
+  j
+}
+
+.item-price p {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2.2rem;
   font-family: "Fraunces", serif;
   color: #3c8067;
+  margin-top: 0;
 }
 
-span {
-  display: inline-block;
+
+.item-price p:last-child {
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   color: #6c7289;
   text-decoration: line-through;
-  vertical-align: middle;
-  padding-bottom: 0.2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  d;
 }
 
 button {
   width: 100%;
   padding: 1rem;
-  border: none;
-  font-weight: bold;
+  cursor: pointer;
   background-color: #3c8067;
   color: #fff;
   border-radius: 5px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.fa-solid{
+  margin-right: 1rem;
+}
+
+@media (min-width: 510px) {
+  .item-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .item-img-box{
+    background-image: url(./images/image-product-desktop.jpg);
+  }
 }
